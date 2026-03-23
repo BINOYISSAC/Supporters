@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Details of Maoist Supporters</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FF0000;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #008000;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #4facfe;
+  outline: none;
+  box-shadow: 0 0 5px rgba(79,172,254,0.5);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #4facfe;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #007bff;
+}
+
+#msg {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+  .container {
+    margin: 15px;
+    padding: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Wayanad District</h1>
+  <h2>Details of Maoist Supporters</h2>
+
+  <form id="myForm" enctype="multipart/form-data">
+  
+<select name="Officer_Name"
+  style="width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; box-sizing: border-box; transition: 0.3s;"
+  required>
+
+  <option value="">Select Officer</option>
+
+  <option value="Binoy Issac, ASI">Binoy Issac, ASI</option>
+  <option value="Sinu George, ASI">Sinu George, ASI</option>
+  <option value="Chandrababu MP, ASI">Chandrababu MP, ASI</option>
+  <option value="Prabhakaran KK, SCPO">Prabhakaran KK, SCPO</option>
+  <option value="Mahesh A Raj, SCPO">Mahesh A Raj, SCPO</option>
+  <option value="Ramesan TM, SCPO">Ramesan TM, SCPO</option>
+  <option value="Rajesh PM, SCPO">Rajesh PM, SCPO</option>
+  <option value="Hariharan KM, SCPO">Hariharan KM, SCPO</option>
+  <option value="Subhash CS, SCPO">Subhash CS, SCPO</option>
+  <option value="Sudheesh IS, SCPO">Sudheesh IS, SCPO</option>
+  <option value="Jijesh VG, CPO">Jijesh VG, CPO</option>
+
+</select>
+	
+
+
+<select name="Police_Station"
+  style="width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; box-sizing: border-box; transition: 0.3s;"
+  required>
+
+  <option value="">Select Police Station</option>
+
+  <option value="Kalpetta">Kalpetta</option>
+  <option value="Meppadi">Meppadi</option>
+  <option value="Vythiri">Vythiri</option>
+  <option value="Padinjarathara">Padinjarathara</option>
+  <option value="Vellamunda">Vellamunda</option>
+  <option value="Thondernadu">Thondernadu</option>
+  <option value="Mananthavady">Mananthavady</option>
+  <option value="Thalappuzha">Thalappuzha</option>
+  <option value="Thirunelly">Thirunelly</option>
+  <option value="Kenichira">Kenichira</option>
+  <option value="Pulppally">Pulppally</option>
+
+</select>
+	
+	
+	
+    <input type="text" name="Supporter_Name" placeholder="Supporter Name" required>
+    <input type="Number" name="Supporter_Age" placeholder="Supporter Age" required>
+	<input type="text" name="Father_Name" placeholder="Name of Father" required>
+    <input type="text" name="Mother_Name" placeholder="Name of Mother" required>
+	<input type="text" name="Spouse_Name" placeholder="Name of Spouse" required>
+
+<textarea 
+  style="width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; box-sizing: border-box; transition: 0.3s;"
+  name="Children_Name" 
+  placeholder="Name of Children" 
+  required>
+</textarea>	
+
+	<input type="text" name="Occupation" placeholder="Occupation" required>
+
+<textarea 
+  style="width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; box-sizing: border-box; transition: 0.3s;"
+  name="Supporter_Address" 
+  placeholder="Supporter Address" 
+  required>
+</textarea>
+
+	<input type="Number" name="Supporter_Phone_No" placeholder="Supporter Phone Number" required>
+	
+	<input type="file" name="Supporter_Photo" accept="image/*" capture="camera" required>
+	
+	<input type="Number" name="Latitude" step="any" placeholder="Latitude" required>
+	<input type="Number" name="Longitude" step="any" placeholder="Longitude" required>	
+	
+<img id="preview" style="width:100%; margin-top:10px; display:none; border-radius:10px;"/>
+
+<script>
+document.querySelector('input[name="photo"]').addEventListener('change', function(e){
+  const file = e.target.files[0];
+  if(file){
+    document.getElementById('preview').src = URL.createObjectURL(file);
+    document.getElementById('preview').style.display = 'block';
+  }
+});
+</script>	
+	
+<select name="Mode_of_Support"
+  style="width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; box-sizing: border-box; transition: 0.3s;"
+  required>
+
+  <option value="">Select Mode of Support</option>
+
+  <option value="Financial Support">Financial Support</option>
+  <option value="Medical Support">Medical Support</option>
+  <option value="Route Guide">Route Guide</option>
+  <option value="Courier">Courier</option>
+  <option value="Food">Food</option>
+  <option value="Shelter">Shelter</option>
+  <option value="Vehicle">Vehicle</option>
+  <option value="Attended Classes">Attended Classes</option>
+  <option value="Secret Information Handling">Secret Information Handling</option>
+  <option value="Other Supports">Other Supports</option>
+
+</select>
+	
+	
+	<input type="text" name="Financial_Aids_Given" placeholder="Financial Aids Given To Maoists" required>
+	<input type="text" name="Financial_Aids_Received" placeholder="Financial Aids Received From Government" required>
+<textarea 
+  style="width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; box-sizing: border-box; transition: 0.3s;"
+  name="Brief_Note" 
+  placeholder="Brief Note" 
+  required>
+</textarea>
+	
+	
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="msg"></p>
+</div>
+
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbws3M5j2TxiKXFFbRolm9I3scvpB-pExdm5pfW_5erovl5OBJhVI7sZ9XpcKRkRo76G/exec";
+
+document.getElementById("myForm").addEventListener("submit", e => {
+  e.preventDefault();
+
+  const msg = document.getElementById("msg");
+  msg.innerHTML = "⏳ Submitting...";
+  msg.className = "";
+
+  fetch(scriptURL, {
+    method: "POST",
+    body: new FormData(e.target)
+  })
+  .then(res => {
+    msg.innerHTML = "✅ Submitted successfully";
+    msg.className = "success";
+	
+    e.target.reset(); // 🔥 Clears all fields
+  })
+  .catch(err => {
+    msg.innerHTML = "❌ Error submitting";
+    msg.className = "error";
+  });
+});
+</script>
+
+</body>
+</html>
